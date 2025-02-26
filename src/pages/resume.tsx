@@ -1,12 +1,12 @@
 import React from "react";
 import Template from "@/components/Template";
 
-const Projects: React.FC = () => {
+const Resume: React.FC = () => {
   return (
     <Template>
-      <h1>Links of project posts here.</h1>
+      <h1>Resume here.</h1>
     </Template>
   );
-}
+};
 
-export default Projects;
+export default Resume;

@@ -10,6 +10,9 @@ const Header: React.FC = () => {
       <div className="flex-none">
         <ul className="menu menu-horizontal p-0">
           <li>
+            <Link className="px-4 py-2 hover:text-primary" href="/resume">Resume</Link>
+          </li>
+          <li>
             <Link className="px-4 py-2 hover:text-primary" href="/blog">Blog</Link>
           </li>
           <li>
