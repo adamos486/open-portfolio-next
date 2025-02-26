@@ -12,6 +12,9 @@ const Header: React.FC = () => {
           <li>
             <Link className="px-4 py-2 hover:text-primary" href="/blog">Blog</Link>
           </li>
+          <li>
+            <Link className="px-4 py-2 hover:text-primary" href="/projects">Projects</Link>
+          </li>
         </ul>
       </div>
     </header>
