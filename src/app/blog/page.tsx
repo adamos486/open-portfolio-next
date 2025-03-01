@@ -15,7 +15,7 @@ type FeedItem = {
 const Blog: React.FC = async () => {
   const parser = new Parser();
   const feed = await parser.parseURL("https://strikingbalance.substack.com/feed");
-  console.log(feed.items)
+  // console.log(feed.items)
 
   const posts: FeedItem[] = feed.items.map((item) => ({
     title: item.title || "Untitled",
