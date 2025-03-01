@@ -15,6 +15,7 @@ type FeedItem = {
 const Blog: React.FC = async () => {
   const parser = new Parser();
   const feed = await parser.parseURL("https://strikingbalance.substack.com/feed");
+  console.log(feed.items)
 
   const posts: FeedItem[] = feed.items.map((item) => ({
     title: item.title || "Untitled",
@@ -36,6 +37,7 @@ const Blog: React.FC = async () => {
               className="text-xl hover:text-indigo-400 transition-colors">
               {post.title}
             </a>
+            <p>{}</p>
             <p className="text-sm text-gray-400">{post.pubDate}</p>
             {post.contentSnippet && (
               <p className="mt-1 text-gray-300">{post.contentSnippet}</p>
